@@ -1,0 +1,19 @@
+CC=g++
+FLAG=-c -Wall
+
+all: hello
+
+hello: main.o sum.o hello.o
+	$(CC) main.o sum.o hello.o -o hello
+
+main.o: main.cpp
+	$(CC) $(FLAG) main.cpp
+
+sum.o: sum.cpp
+	$(CC) $(FLAG) sum.cpp
+
+hello.o: hello.cpp
+	$(CC) $(FLAG) hello.cpp
+
+clean:
+	rm -rf *.o hello
