@@ -1,4 +1,6 @@
 fio = 'ivanov ivan ivanovich'
 
 print("FIO:", fio)
-print("Count of symbols=", len(fio.replace(' ', '')))
+s = fio.split()
+s = ''.join(s)
+print (len(s))
