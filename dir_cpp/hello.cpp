@@ -7,4 +7,5 @@ void print_hello()
 {
 	cout << "Hello, this is CPP code!" << endl;
 	cout << "Hello Git!" << endl;
+	cout << "Hello branches" << endl;
 }
